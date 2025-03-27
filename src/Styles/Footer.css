@@ -1,0 +1,261 @@
+/* Footer.css */
+.footer {
+    background: linear-gradient(135deg, #0f0c29, #1a1a2e);
+    color: white;
+    padding: 60px 5% 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .footer-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+  
+  .footer-brand {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .footer-brand .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    background: linear-gradient(90deg, #ff4b2b, #ff8a5b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: 'Pacifico', cursive; /* Use a stylish cursive font */
+  }
+  
+  .footer-brand p {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+  }
+  
+  .footer-links {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .link-group {
+    min-width: 150px;
+  }
+  
+  .link-group h3 {
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  
+  .link-group h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, #ff4b2b, #ff8a5b);
+  }
+  
+  .link-group a {
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .link-group a:hover {
+    color: #ff6f61;
+    transform: translateX(5px);
+  }
+  
+  /* Game Section */
+  .game-section {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 40px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 75, 43, 0.2);
+  }
+  
+  .game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .game-header h3 {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .game-toggle {
+    background: linear-gradient(90deg, #ff4b2b, #ff8a5b);
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .game-toggle:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 75, 43, 0.3);
+  }
+  
+  .game-area {
+    height: 200px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .game-score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    z-index: 2;
+  }
+  
+  .game-character {
+    position: absolute;
+    font-size: 2rem;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: left 0.1s linear;
+    z-index: 3;
+  }
+  
+  .game-particle {
+    position: absolute;
+    font-size: 1.5rem;
+    transform: translate(-50%, -50%);
+    animation: float-particle 5s linear forwards;
+    z-index: 1;
+  }
+  
+  @keyframes float-particle {
+    to {
+      transform: translate(-50%, 1000px);
+    }
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .footer-bottom p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-links a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #ff6f61;
+    transform: translateY(-3px);
+  }
+  
+  /* Decorative Elements */
+  .footer-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    z-index: 1;
+  }
+  
+  .orb-1 {
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 75, 43, 0.1);
+    bottom: -100px;
+    left: -100px;
+  }
+  
+  .orb-2 {
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 138, 91, 0.1);
+    top: -100px;
+    right: -100px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-main {
+      flex-direction: column;
+      gap: 30px;
+    }
+    
+    .footer-links {
+      gap: 30px;
+    }
+    
+    .game-area {
+      height: 150px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .footer {
+      padding: 40px 5% 20px;
+    }
+    
+    .link-group {
+      min-width: 120px;
+    }
+    
+    .game-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+    }
+    
+    .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+    }
+  }

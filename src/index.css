@@ -1,0 +1,53 @@
+/* Apply to entire website */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Matte Black */
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Remove default margin and padding */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Improve link visibility */
+a {
+  text-decoration: none;
+  color: #ff4b2b; /* Highlight Color */
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #ff6f61;
+}
+
+/* Center content (optional) */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Responsive Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+p {
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* Add smooth transitions */
+button, a {
+  transition: all 0.3s ease-in-out;
+}
